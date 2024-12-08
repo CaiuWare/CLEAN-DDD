@@ -1,1 +1,22 @@
-# CLEAN-DDD
+# DDD (Domain-drive Design)
+
+Design dirigido à domínio
+
+## Domínio
+
+    - Domain Experts
+        -Conversas
+    - Linguágem ubíqua
+
+    - Usuário 
+        - Cliente
+        - Fornecedor
+        - Atendente
+        - Barman
+
+    - Agregados
+    - Value Objects
+    - Eventos de domínio
+    - Subdomínios (Bounded Contexts)
+    - Entidades
+    - Casos de uso

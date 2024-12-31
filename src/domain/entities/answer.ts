@@ -10,17 +10,31 @@ interface AnswerProps {
     updateAt?: Date
 }
 export class Answer extends Entity<AnswerProps> {
+    get authorId() {
+        return this.props.authorId
+    }
+    get questionId() {
+        return this.props.questionId
+    }
     get content() {
         return this.props.content
     }
+    get createAt() {
+        return this.props.createAt
+    }
+    get updateAt() {
+        return this.props.updateAt
+    }
 
-        static create(props: Optional<AnswerProps, 'createAt'>, id?: UniqueEntityID) {
-            const answer = new Answer({...props,
-                createAt: new Date()
-            }, id)
+
+
+    static create(props: Optional<AnswerProps, 'createAt'>, id?: UniqueEntityID) {
+        const answer = new Answer({...props,
+            createAt: new Date()
+        }, id)
     
-            return answer
-        }
+        return answer
+    }
 
 
 }
